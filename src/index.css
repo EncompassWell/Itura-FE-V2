@@ -1,1 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+  --color-darkBg: #030A04;
+  --color-darkFg: #FFFFFF;
+  --color-lightBg: #FFFFFF;
+  --color-lightFg: #000;
+  --color-gradientYellow: #F8C238;
+  --color-gradientRed: #F83838;
+  --color-orange: #FF6B00;
+  --color-lightOrange: #FF9E58;
+  --color-footerBg: #161320;
+
+  --font-inter: "Inter", "sans-serif"; 
+  --font-dmSans: "DM Sans", "sans-serif"; 
+  --font-instrumentSerif: "Instrument Serif", "serif"; 
+
+}
