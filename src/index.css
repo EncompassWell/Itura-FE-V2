@@ -12,9 +12,20 @@
   --color-orange: #FF6B00;
   --color-lightOrange: #FF9E58;
   --color-footerBg: #161320;
+  --color-textGrey: #A39EB6;
 
   --font-inter: "Inter", "sans-serif"; 
   --font-dmSans: "DM Sans", "sans-serif"; 
   --font-instrumentSerif: "Instrument Serif", "serif"; 
 
+}
+
+.dark {
+  background: #030A04;
+  color: #FFFFFF;
+}
+
+.light {
+  background: #FFFFFF;
+  color: #030A04;
 }

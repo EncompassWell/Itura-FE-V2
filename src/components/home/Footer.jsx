@@ -11,7 +11,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-footerBg w-[95%] mx-auto rounded-tr-2xl rounded-tl-2xl text-white border border-t border-l border-r font-dmSans">
+    <footer className="bg-footerBg w-[95%] mx-auto  text-white font-dmSans">
+      <div className="border-white/10 border-t border-l border-r rounded-tr-2xl rounded-tl-2xl">
       <div className="flex lg:justify-between text-center lg:text-left md:text-left w-[100%] lg:w-[80%] md:w-[80%] mx-auto py-20 lg:flex-row md:flex-row flex-col">
         <div className="w-[30%] lg:mx-0 md:mx-0 mx-auto">
           <img src={logo} alt="" className="w-[202] h-[160] mb-6" />
@@ -40,6 +41,7 @@ const Footer = () => {
             <p className="mb-2">4 Barnawa Close, Barnawa, Kaduna</p>
           </div>
         </div>
+      </div>
       </div>
       <div className="flex justify-between items-center w-[90%] mx-auto border-t border-white/10 py-8 lg:flex-row md:flex-row flex-col text-[14px] text-center lg:text-left md:text-left">
         <p className="mb-3 order-2 lg:order-1 md:order-1">&copy; {currentYear} EncompassWell All rights reserved.</p>
