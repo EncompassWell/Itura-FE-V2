@@ -3,6 +3,7 @@ import Header from '../../components/home/Header'
 import Footer from '../../components/home/Footer'
 import { ThemeContext } from '../../context/ThemeProvider'
 import Hero from '../../components/home/Hero'
+import Review from '../../components/home/Review'
 
 const Home = () => {
   const {theme } = useContext(ThemeContext)
@@ -14,6 +15,7 @@ const Home = () => {
         {isDark && <div className='w-[500px] h-[500px] bg-linear-to-b from-gradientYellow to-gradientRed blur-[315px] rounded-full absolute left-1/2 top-[-270.5px] transform -translate-x-1/2 z-0'>
         </div>}
         <Hero />
+        <Review />
         <Footer />
     </main>
   )

@@ -43,7 +43,7 @@ const Header = () => {
         <img src={logo} alt="Itura logo" className="w-[70px]" />
         <Hamburger
           toggled={isOpen}
-          toggle={() => setOpen(!isOpen)}
+          toggle={setOpen}
           color="#FFF"
           direction="left"
         />

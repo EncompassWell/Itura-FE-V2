@@ -10,6 +10,6 @@ export default defineConfig({
   ],
   optimizeDeps: {
     include: ['react-icons'],
-    exclude: ['blip-ds/loader']
+    // exclude: ['blip-ds/loader']
   },
 })

@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <ThemeProvider>
-     <div className="max-w-[1440px] mx-auto font-inter text-[16px]">
+     <div className="max-w-[1440px] mx-auto font-inter text-[16px] fot-[400]">
          <RouterProvider router={router} />
        </div>
        </ThemeProvider>
