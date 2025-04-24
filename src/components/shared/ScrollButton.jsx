@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { MdDoubleArrow } from "react-icons/md";
-
+import { useThemeStyle } from "../../hooks/useThemeStyle";
 
 const ScrollButton = () => {
+    const bgClass = useThemeStyle("bg-black text-white", "bg-white/10")
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -32,7 +33,7 @@ const ScrollButton = () => {
     return (
         <div className="fixed bottom-8 right-8 z-[99]">
             {
-                isVisible && (<button onClick={scrollToTop} className="px-3.5 py-3.5 bg-primary duration-200 transition-all hover:bg-lilac text-white md:text-2xl text-base rounded-[3px]">
+                isVisible && (<button onClick={scrollToTop} className={`px-3.5 py-3.5 bg-primary duration-200 transition-all hover:bg-lilac text-white md:text-2xl text-base rounded-[3px] border border-white/20 ${bgClass}`}>
                     <MdDoubleArrow className="-rotate-90 animate-pulse" />
                 </button>)
             }

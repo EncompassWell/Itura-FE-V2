@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ThemeContext } from "../../context/ThemeProvider";
 
 const FAQ = () => {
-  const bgClass = useThemeStyle("bg-black", "bg-white/10");
+  const bgClass = useThemeStyle("bg-black text-white", "bg-white/10");
   const { theme } = useContext(ThemeContext);
 
   const isDark = theme === "dark";
