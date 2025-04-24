@@ -29,3 +29,7 @@
   background: #FFFFFF;
   color: #030A04;
 }
+
+.accordion-card:nth-child(5) {
+  border-bottom: 0;
+}

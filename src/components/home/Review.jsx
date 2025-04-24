@@ -36,14 +36,15 @@ const Review = () => {
   ];
 
   const bgClass = useThemeStyle("bg-black", "bg-white/10");
+
   return (
-    <div className="flex justify-between flex-col lg:flex-row md:flex-row w-[90%] mx-auto my-10">
-      <div className="flex justify-between flex-wrap flex-col lg:flex-row md:flex-row lg:w-[50%] md:w-[50%] w-[95%] mx-auto py-6  items-start">
+    <div className="flex justify-between flex-col lg:flex-row md:flex-row lg:w-[80%] md:w-[80%] w-[90%] mx-auto my-10">
+      <div className="flex justify-between flex-wrap flex-col lg:flex-row md:flex-row lg:w-[52%] md:w-[52%] w-[95%] mx-auto lg:mx-0 md:mx-0 py-6  ">
         {reviews.map((review, index) => (
           <div
             key={index}
             className={`
-          lg:w-[47%] md:w-[47%] w-[100%] 
+          lg:w-[47%] md:w-[50%] w-[100%]
           mx-auto p-5 py-8 border border-white/20 mb-4 
           rounded-xl self-start ${bgClass} 
           min-h-[320px] text-white
@@ -72,7 +73,7 @@ const Review = () => {
           </div>
         ))}
       </div>
-      <div className="lg:w-[38%] md:w-[38%] w-[100%] my-auto text-center lg:text-left md:text-left">
+      <div className="lg:w-[40%] md:w-[40%] w-[100%] my-auto text-center lg:text-left md:text-left">
         <h2 className="text-[42px] lg:text-[56px] md:text-[56px] font-medium flex flex-col leading-12">
           Voices of Clarity{" "}
           <span className="text-[30px] lg:text-[40px] md:text-[40px] font-instrumentSerif italic">

@@ -1,24 +1,27 @@
-import React, { useContext } from 'react'
-import Header from '../../components/home/Header'
-import Footer from '../../components/home/Footer'
-import { ThemeContext } from '../../context/ThemeProvider'
-import Hero from '../../components/home/Hero'
-import Review from '../../components/home/Review'
+import React, { useContext } from "react";
+import Header from "../../components/home/Header";
+import Footer from "../../components/home/Footer";
+import { ThemeContext } from "../../context/ThemeProvider";
+import Hero from "../../components/home/Hero";
+import Review from "../../components/home/Review";
+import FAQ from "../../components/home/FAQ";
 
 const Home = () => {
-  const {theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
 
-  const isDark = theme === "dark"
+  const isDark = theme === "dark";
   return (
-    <main className='relative'>
-        <Header />
-        {isDark && <div className='w-[500px] h-[500px] bg-linear-to-b from-gradientYellow to-gradientRed blur-[315px] rounded-full absolute left-1/2 top-[-270.5px] transform -translate-x-1/2 z-0'>
-        </div>}
-        <Hero />
-        <Review />
-        <Footer />
+    <main className="relative">
+      <Header />
+      {isDark && (
+          <div className="w-[706px] h-[353px] bg-linear-to-b from-gradientYellow to-gradientRed blur-[315px] rounded-bl-full rounded-br-full absolute left-1/2 top-0 transform -translate-x-1/2 z-0"></div> 
+      )}
+      <Hero />
+      <FAQ />
+      <Review />
+      <Footer />
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

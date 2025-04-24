@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <div className="flex flex-col lg:flex-row md:flex-row justify-between my-16 items-center">
-      <div className="w-[95%] mx-auto lg:w-[40%] md:w-[45%] lg:ml-auto lg:mr-0 text-center lg:text-left md:text-left mb-8">
+      <div className="w-[95%] mx-auto lg:w-[40%] md:w-[45%] text-center lg:text-left md:text-left mb-8">
         <p className="flex py-3 rounded-full text-orange border border-lightOrange items-center w-[100%] lg:w-[50%] md:w-[65%] mb-2 justify-center text-[14px]"><GoDotFill className="text-3xl"/> Your AI Art Therapy Studio</p>
         <h1 className="text-[51px] lg:text-[71px] md:text-[71px] font-medium">
           Nurture Your{" "}
@@ -52,7 +52,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="w-[95%] mx-auto lg:w-[40%] md:w-[45%] mb-8">
+      <div className="w-[95%] mx-auto lg:mx-0 md:mx-0 lg:w-[40%] md:w-[45%] mb-8">
         <img src={heroImg} alt="" />
       </div>
     </div>
