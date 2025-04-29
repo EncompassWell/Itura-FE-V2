@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
-import bg1 from "../../assets/bg.svg";
-import bg2 from "../../assets/lightbgg.svg";
-import bg3 from "../../assets/darkbgg.svg";
+import FeaturesCard from "./FeaturesCard";
 import feat1 from "../../assets/img-1.svg";
 import feat2 from "../../assets/img-2.svg";
 import feat3 from "../../assets/img-3.svg";
@@ -65,25 +63,8 @@ const Features = () => {
         </div>
       </div>
       <div className="flex justify-between flex-col lg:flex-row md:flex-row">
-        <div className="lg:w-[48%] md:w-[47%] w-[100%]">
-          <img
-            src={bg1}
-            alt=""
-            className="w-[100%] lg:h-[540px] md:h-[540px] h-[250px] object object-cover object-left-top rounded-2xl mb-4"
-          />
+<FeaturesCard />
         </div>
-        <div className="lg:w-[50%] md:w-[50%] w-[100%]">
-          {isDark ? (
-            <img
-              src={bg2}
-              alt=""
-              className="w-[100%] lg:h-[540px] md:h-[540px] h-[250px] object object-cover object-left-top rounded-2xl mb-4"
-            />
-          ) : (
-            <img src={bg3} alt=""  className="w-[100%] lg:h-[540px] md:h-[540px] h-[250px] object object-cover object-left-top rounded-2xl mb-4"/>
-          )}
-        </div>
-      </div>
     </div>
   );
 };
