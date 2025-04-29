@@ -5,6 +5,7 @@ import feat2 from "../../assets/img-2.svg";
 import feat3 from "../../assets/img-3.svg";
 import { useThemeStyle } from "../../hooks/useThemeStyle";
 import { ThemeContext } from "../../context/ThemeProvider";
+import OverviewCard from "./OverviewCard";
 
 const Features = () => {
   const bgClass = useThemeStyle("bg-black text-white", "bg-white/10");
@@ -23,7 +24,7 @@ const Features = () => {
             alt=""
             className="w-[100%] h-[290px] object object-cover"
           />
-          <h3 className="bg-gradient-to-r from-[#F5F4F7] via-[#F3F2F5] to-[#B0ADBF] text-[26px] lg:text-[28px] md:text-[28px] font-medium inline-block my-3 bg-clip-text px-3">
+          <h3 className="bg-gradient-to-r from-[#F5F4F7] via-[#F3F2F5] to-[#B0ADBF] text-[26px] lg:text-[28px] md:text-[28px] font-medium inline-block my-3 bg-clip-text px-3 text-transparent">
             A Doorway to Creative Clarity.
           </h3>
           <p className="text-[14px] px-3 mb-6">
@@ -38,7 +39,7 @@ const Features = () => {
             alt=""
             className="w-[100%] h-[290px] object object-cover"
           />
-          <h3 className="bg-gradient-to-r from-[#F5F4F7] via-[#F3F2F5] to-[#B0ADBF] text-[26px] lg:text-[28px] md:text-[28px] font-medium inline-block my-3 bg-clip-text px-3">
+          <h3 className="bg-gradient-to-r from-[#F5F4F7] via-[#F3F2F5] to-[#B0ADBF] text-[26px] lg:text-[28px] md:text-[28px] font-medium inline-block my-3 bg-clip-text px-3 text-transparent">
             A Safe Space to Talk & Reflect.
           </h3>
           <p className="text-[14px] px-3 mb-6">
@@ -54,7 +55,7 @@ const Features = () => {
             alt=""
             className="w-[100%] h-[290px] object object-cover"
           />
-          <h3 className="bg-gradient-to-r from-[#F5F4F7] via-[#F3F2F5] to-[#B0ADBF] text-[26px] lg:text-[28px] md:text-[28px] font-medium inline-block my-3 bg-clip-text px-3">
+          <h3 className="bg-gradient-to-r from-[#F5F4F7] via-[#F3F2F5] to-[#B0ADBF] text-[26px] lg:text-[28px] md:text-[28px] font-medium inline-block my-3 bg-clip-text px-3 text-transparent">
             Top Suggestions.
           </h3>
           <p className="text-[14px] px-3 mb-6">
@@ -62,9 +63,10 @@ const Features = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-between flex-col lg:flex-row md:flex-row">
-<FeaturesCard />
-        </div>
+      <div className="flex justify-between flex-col lg:flex-row md:flex-row mt-4">
+        <FeaturesCard />
+        <OverviewCard />
+      </div>
     </div>
   );
 };
