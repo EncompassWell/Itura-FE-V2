@@ -102,7 +102,7 @@ const FAQ = () => {
         {isDark && (
             <div>
         <div className="w-[180px] h-[90px] lg:w-[300px] lg:h-[150px] md:w-[300px] md:h-[150px] bg-linear-to-b from-gradientYellow to-gradientRed blur-[100px] rounded-bl-full rounded-br-full shadow-xl absolute lg:left-20 md:left-20 left-0 top-0 z-0"></div>
-        <div className="w-[180px] h-[90px] lg:w-[300px] lg:h-[150px] md:w-[300px] md:h-[150px] bg-linear-to-b from-gradientYellow to-gradientRed blur-[100px] rounded-bl-full rounded-br-full shadow-xl absolute lg:right-20 md:right-20 right-0 bottom-0 rotate-180 z-0"></div>
+        <div className="w-[180px] h-[90px] lg:w-[300px] lg:h-[150px] md:w-[300px] md:h-[150px] bg-linear-to-b from-gradientYellow to-gradientRed blur-[100px] rounded-bl-full rounded-br-full shadow-xl absolute lg:right-20 md:right-20 right-0 bottom-0 rotate-180 -z-10"></div>
         </div>
       )} 
       </div>

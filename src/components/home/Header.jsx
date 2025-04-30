@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../shared/Reuse";
 import ToggleButton from "../shared/ToggleButton";
 import { useThemeStyle } from "../../hooks/useThemeStyle";
-import { Divide as Hamburger } from 'hamburger-react'
+import { Divide as Hamburger } from "hamburger-react";
+import { ThemeContext } from "../../context/ThemeProvider";
 
 const Header = () => {
   const bgClass = useThemeStyle("bg-black", "bg-white/5");
   const [isOpen, setOpen] = useState(false);
-  console.log(isOpen)
 
   return (
     <header className="">
@@ -39,7 +39,9 @@ const Header = () => {
         </div>
         <ToggleButton />
       </div>
-      <div className="flex items-center w-[90%] mx-auto lg:hidden md:hidden justify-between my-10 relative">
+      <div
+        className={`flex items-center w-[90%] mx-auto lg:hidden md:hidden justify-between my-10 relative p-3 rounded-xl ${bgClass}`}
+      >
         <img src={logo} alt="Itura logo" className="w-[70px]" />
         <Hamburger
           toggled={isOpen}
@@ -49,7 +51,7 @@ const Header = () => {
         />
         {isOpen && (
           <div
-            className={`p-8 py-12 h-[80vh] w-[100%] absolute top-14 left-0 text-white justify-center text-center z-50 flex flex-col items-center bg-black`}
+            className={`p-8 py-12 h-[80vh] w-[100%] absolute top-18 left-0 text-white justify-center text-center z-50 flex flex-col items-center bg-black`}
           >
             <ToggleButton />
 
@@ -66,7 +68,9 @@ const Header = () => {
               <NavLink to="" className="mb-4">
                 Blog
               </NavLink>
-              <NavLink to="" className="mb-4">Contact</NavLink>
+              <NavLink to="" className="mb-4">
+                Contact
+              </NavLink>
             </nav>
             <Button className="bg-linear-to-r from-orange to-lightOrange rounded-xl text-white">
               Launch the app
