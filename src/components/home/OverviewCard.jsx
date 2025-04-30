@@ -64,7 +64,7 @@ const OverviewCard = () => {
         </div>
       </div>
       {isDark && (
-        <div className="w-[320px] h-[320px] bg-linear-to-b from-gradientYellow to-gradientRed blur-[200px] rounded-full absolute left-1/2 top-20 transform -translate-x-1/2 z-0"></div>
+        <div className="w-[220px] h-[220px] bg-linear-to-b from-gradientYellow to-gradientRed blur-[200px] rounded-full absolute left-1/2 top-20 transform -translate-x-1/2 z-0"></div>
       )}
     </div>
   );
