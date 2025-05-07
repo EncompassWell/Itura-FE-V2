@@ -33,3 +33,7 @@
 .accordion-card:nth-child(5) {
   border-bottom: 0;
 }
+
+.help {
+  color: #ffffff26;
+}

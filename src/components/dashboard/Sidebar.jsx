@@ -1,58 +1,86 @@
-import { CgHomeAlt } from "react-icons/cg";
-import { TbSettings } from "react-icons/tb";
-import { ImCart } from "react-icons/im";
+import { IoSettingsOutline } from "react-icons/io5";
+import { IoLibrary } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.svg"
-import { RiChatHistoryFill } from "react-icons/ri";
+import logo from "../../assets/logo.svg";
+import { TbHelpSquare } from "react-icons/tb";
 import { SiChatbot } from "react-icons/si";
+import ravatarImg from "../../assets/ravatar.svg";
+import { TbSmartHome } from "react-icons/tb";
+import { useThemeStyle } from "../../hooks/useThemeStyle";
 
 const Sidebar = () => {
+  const themeColor = useThemeStyle("bg-black text-white border-black", "bg-white/15 border-white/20")
+
   const activeStyle = {
-    background: "#F86737",
+    background: "#FFFFFF26",
     borderRadius: "10px",
-    color: "#030A04",
+    color: "#FFF",
     width: "100%",
     padding: "20px",
   };
 
   return (
-    <div className="w-[20%] text-white p-8 py-12 h-[100vh] hidden lg:flex md:flex flex-col border-r border-grey">
-      <img src={logo} alt="logo" className="mb-20 w-[150px]" />
+    <div className={`w-[20%] text-white p-8 py-12 h-[100vh] hidden lg:flex md:flex flex-col border-r border-white/10 overflow-scroll ${themeColor}`}>
+      <NavLink to='/'><img src={logo} alt="logo" className="mb-20 w-[55px]" /></NavLink>
+      <div className="flex items-center mb-10">
+        <img src={ravatarImg} alt="" className="h-[41px] w-[41px]" />
+        <p className="text-[12px] ml-3">
+          Jo Edor <br />
+          <span className="text-white/60">0xe12ewas.......</span>
+        </p>
+      </div>
       <NavLink
         to="/dashboard"
-        className="text-[14px] flex items-center py-4 mb-6 px-4"
+        className="text-[14px] flex items-center py-4 mb-6 px-4 font-medium"
         style={({ isActive }) => (isActive ? activeStyle : null)}
         end
       >
-        <CgHomeAlt className="mr-4" />
+        <TbSmartHome className="mr-2 text-2xl" />
         Dashboard
       </NavLink>
       <NavLink
-        to="marketplace"
-        className="text-[14px] flex items-center py-4 mb-6 px-4"
-        style={({ isActive }) => (isActive ? activeStyle : null)}
-      >
-        <ImCart className="mr-4" /> Marketplace
-      </NavLink>
-      <NavLink
         to="aichat"
-        className="text-[14px]   flex items-center py-4 mb-6 px-4"
+        className="text-[14px] flex items-center py-4 mb-6 px-4 font-medium"
         style={({ isActive }) => (isActive ? activeStyle : null)}
       >
-        <SiChatbot className="mr-4" />
+        <SiChatbot className="mr-2 text-2xl" />
         AI Chat
       </NavLink>
       <NavLink
-        to="history"
-        className="text-[14px]   flex items-center py-4 mb-6 px-4"
+        to="library"
+        className="text-[14px] flex items-center py-4 mb-6 px-4 font-medium"
         style={({ isActive }) => (isActive ? activeStyle : null)}
       >
-        <RiChatHistoryFill className="mr-4" />
-        History
+        <IoLibrary className="mr-2 text-2xl" />
+        Library
       </NavLink>
-      <button className="text-[16px]   flex items-center py-4 mb-4 px-4 mt-auto border-t border-grey">
-        <TbSettings className="mr-4" /> Log out
-      </button>
+      <div className="border-t border-b border-white/30 mb-10 mt-4 py-6">
+        <NavLink
+          to="library"
+          className="text-[14px] flex items-center py-4 mb-6 px-4 font-medium"
+          style={({ isActive }) => (isActive ? activeStyle : null)}
+        >
+          <IoSettingsOutline className="mr-2 text-2xl" />
+          Setting
+        </NavLink>
+        <NavLink
+          to="library"
+          className="text-[14px] flex items-center py-4 px-4 font-medium"
+          style={({ isActive }) => (isActive ? activeStyle : null)}
+        >
+          <TbHelpSquare className="mr-2 text-2xl" />
+          Help
+        </NavLink>
+      </div>
+      <div>
+        <h2 className="lg:text-[24px] md:text-[24px] text-[18px] font-instrumentSerif italic">
+          History
+        </h2>
+        <div className="my-4">
+            <p className="font-medium text-[12px]">Music matching for mood</p>
+            <p className="text-[10px]">Slow cool music for feeling very sad about my....</p>
+        </div>
+      </div>
     </div>
   );
 };
