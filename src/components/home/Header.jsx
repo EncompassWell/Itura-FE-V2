@@ -33,9 +33,9 @@ const Header = () => {
             </NavLink>
             <NavLink to="">Contact</NavLink>
           </nav>
-          <Button className="bg-linear-to-r from-orange to-lightOrange rounded-xl text-white">
+          <NavLink to='/dashboard' className="bg-linear-to-r from-orange to-lightOrange rounded-xl text-white p-3">
             Launch the app
-          </Button>
+          </NavLink>
         </div>
         <ToggleButton />
       </div>
@@ -72,9 +72,9 @@ const Header = () => {
                 Contact
               </NavLink>
             </nav>
-            <Button className="bg-linear-to-r from-orange to-lightOrange rounded-xl text-white">
+            <NavLink to='/dashboard' className="p-3 bg-linear-to-r from-orange to-lightOrange rounded-xl text-white">
               Launch the app
-            </Button>
+            </NavLink>
           </div>
         )}
       </div>

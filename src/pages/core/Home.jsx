@@ -18,7 +18,7 @@ const Home = () => {
     <main className="relative">
       <Header />
       {isDark && (
-          <div className="w-[706px] h-[353px] bg-linear-to-b from-gradientYellow to-gradientRed blur-[315px] rounded-bl-full rounded-br-full absolute left-1/2 top-0 transform -translate-x-1/2 lg:z-0 md:z-0 -z-10"></div> 
+          <div className="w-[706px] h-[353px] bg-linear-to-b from-gradientYellow to-gradientRed blur-[315px] rounded-bl-full rounded-br-full absolute left-1/2 top-0 transform -translate-x-1/2 -z-10"></div> 
       )}
       <Hero />
       <TopArt />
