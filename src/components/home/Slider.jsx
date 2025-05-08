@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useThemeStyle } from "../../hooks/useThemeStyle";
 
 const slides = [
   "./art1.svg",

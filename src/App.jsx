@@ -9,6 +9,7 @@ import Home from './pages/core/Home'
 import { ThemeProvider } from './context/ThemeProvider';
 import DashboardLayout from './layout/DashboardLayout';
 import Dashboard from './pages/dashboard/Dashboard';
+import AIChat from './pages/dashboard/AIChat';
 
 
 const router = createBrowserRouter(
@@ -17,8 +18,8 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path='/dashboard' element={<DashboardLayout />}>
       <Route index element={<Dashboard />} />
-      </Route>
-     
+      <Route path='/dashboard/aichats' element={<AIChat />} />
+      </Route>   
     </Route>
   )
 );

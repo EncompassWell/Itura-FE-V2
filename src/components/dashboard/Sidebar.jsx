@@ -1,11 +1,11 @@
 import { IoSettingsOutline } from "react-icons/io5";
 import { IoLibrary } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.svg";
+import { TbSmartHome } from "react-icons/tb";
 import { TbHelpSquare } from "react-icons/tb";
 import { SiChatbot } from "react-icons/si";
+import { NavLink } from "react-router-dom";
+import logo from "../../assets/logo.svg";
 import ravatarImg from "../../assets/ravatar.svg";
-import { TbSmartHome } from "react-icons/tb";
 import { useThemeStyle } from "../../hooks/useThemeStyle";
 
 const Sidebar = () => {
@@ -39,7 +39,7 @@ const Sidebar = () => {
         Dashboard
       </NavLink>
       <NavLink
-        to="aichat"
+        to="aichats"
         className="text-[14px] flex items-center py-4 mb-6 px-4 font-medium"
         style={({ isActive }) => (isActive ? activeStyle : null)}
       >
