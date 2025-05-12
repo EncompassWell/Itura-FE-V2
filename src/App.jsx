@@ -10,7 +10,9 @@ import { ThemeProvider } from './context/ThemeProvider';
 import DashboardLayout from './layout/DashboardLayout';
 import Dashboard from './pages/dashboard/Dashboard';
 import AIChat from './pages/dashboard/AIChat';
-
+import Settings from './pages/dashboard/Settings';
+import Ravatar from './pages/dashboard/Ravatar';
+import Error from './pages/core/Error';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,7 +21,10 @@ const router = createBrowserRouter(
       <Route path='/dashboard' element={<DashboardLayout />}>
       <Route index element={<Dashboard />} />
       <Route path='/dashboard/aichats' element={<AIChat />} />
-      </Route>   
+      <Route path='/dashboard/settings' element={<Settings />} />
+      <Route path='/dashboard/settings/ravatar' element={<Ravatar />} />
+      </Route> 
+      <Route path="*" element={<Error />} />   
     </Route>
   )
 );

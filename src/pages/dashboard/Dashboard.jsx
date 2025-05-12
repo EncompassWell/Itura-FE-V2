@@ -17,15 +17,10 @@ const Dashboard = () => {
     "bg-black text-white border-white/25",
     "bg-white/15 border-white/20"
   );
-  const { theme } = useContext(ThemeContext);
-
-  const isDark = theme === "dark";
 
   return (
     <main>
-      {isDark && (
-        <div className="lg:w-[706px] md:w-[706px] w-[400px]  lg:h-[353px] md:h-[353px] h-[200px] bg-linear-to-b from-gradientYellow to-gradientRed lg:blur-[315px] md:blur-[315px] blur-[115px] rounded-bl-full rounded-br-full absolute left-1/2 top-0 transform -translate-x-1/2 -z-10"></div>
-      )}
+     
   
       <section>
         <DemoCard />

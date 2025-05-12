@@ -56,7 +56,7 @@ const Sidebar = () => {
       </NavLink>
       <div className="border-t border-b border-white/30 mb-10 mt-4 py-6">
         <NavLink
-          to="library"
+          to="settings"
           className="text-[14px] flex items-center py-4 mb-6 px-4 font-medium"
           style={({ isActive }) => (isActive ? activeStyle : null)}
         >
@@ -64,7 +64,7 @@ const Sidebar = () => {
           Setting
         </NavLink>
         <NavLink
-          to="library"
+          to="help"
           className="text-[14px] flex items-center py-4 px-4 font-medium"
           style={({ isActive }) => (isActive ? activeStyle : null)}
         >
